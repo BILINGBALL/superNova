@@ -15,7 +15,6 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include, re_path
-
 import agency.views
 
 urlpatterns = [
@@ -23,4 +22,5 @@ urlpatterns = [
     path('agency', include('agency.urls')),
     # path('', include('django.contrib.auth.urls')),
     re_path(r'^$', agency.views.index),
+    # re_path(r'^$', agency.views.index),
 ]

@@ -7,6 +7,6 @@ def project_signature(request):
 
 
 def index(request):
-    t = get_template('index.html')
+    t = get_template('supernova/moban7588/index.html')
     html = t.render()
     return HttpResponse(html)
